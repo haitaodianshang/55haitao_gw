@@ -1,0 +1,6 @@
+[submodule "api_common"]
+	path = api_common
+	url = git@git.i55haitao.com:baijie/api_common.git
+[submodule "rpc_client"]
+	path = rpc_client
+	url = git@git.i55haitao.com:baijie/rpc_client.git
