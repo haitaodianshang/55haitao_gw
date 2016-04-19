@@ -1,0 +1,3420 @@
+{
+  "version": "0.0.1", 
+  "data": {
+    "groups": {
+      "usercenter.SystemService": [
+        {
+          "rest_spec": {
+            "name": "getServerTime", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.SystemService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "SystemService", 
+          "url": "^/usercenter.SystemService/getServerTime$", 
+          "api_name": "getServerTime", 
+          "module_name": "usercenter.SystemService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "getServerTime", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.SystemService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "SystemService", 
+          "url": "^/usercenter.SystemService/getServerTime$", 
+          "api_name": "getServerTime", 
+          "module_name": "usercenter.SystemService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "getServerTime", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.SystemService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "SystemService", 
+          "url": "^/usercenter.SystemService/getServerTime$", 
+          "api_name": "getServerTime", 
+          "module_name": "usercenter.SystemService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "getServerTime", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.SystemService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "SystemService", 
+          "url": "^/usercenter.SystemService/getServerTime$", 
+          "api_name": "getServerTime", 
+          "module_name": "usercenter.SystemService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "getServerTime", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.SystemService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "SystemService", 
+          "url": "^/usercenter.SystemService/getServerTime$", 
+          "api_name": "getServerTime", 
+          "module_name": "usercenter.SystemService", 
+          "se_level": null
+        }
+      ], 
+      "usercenter.UserService": [
+        {
+          "rest_spec": {
+            "name": "register", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "mobile"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "client_ip"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "password"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "country"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "validated_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "need_validate_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "identify_code"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "is_third_party_account"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "sex"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "profile_image_url"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "screen_name"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "platform"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "imei"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "download_site"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "other"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "wx_open_id"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "cl_version"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/register$", 
+          "api_name": "register", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "checkThirdAccount", 
+            "doc": "\n        \u68c0\u6d4b\u7b2c\u4e09\u65b9\u8d26\u53f7\u662f\u5426\u5df2\u7ecf\u88ab\u7ed1\u5b9a\n        :param obj:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "openid"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/checkThirdAccount$", 
+          "api_name": "checkThirdAccount", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "login_V3", 
+            "doc": "\u767b\u5f55V3\uff0c\u589e\u52a0\u767b\u5f55\u65b9\u5f0f\u53c2\u6570\uff0c\u6839\u636e\u767b\u5f55\u65b9\u5f0f\uff0c\u91c7\u7528\u4e0d\u540c\u7684\u9a8c\u8bc1\u65b9\u5f0f\n        \u767b\u5f55\u65b9\u5f0f,1\u4e3a\u5bc6\u7801\u65b9\u5f0f\u767b\u5f55\uff0c2\u4e3a\u9a8c\u8bc1\u7801\u65b9\u5f0f\u767b\u5f55\n        @:arg appid\n        @:arg device_id\n        @:arg username\n        @:arg passwd\n        @:return\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "username", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "login_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "password", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/login_V3$", 
+          "api_name": "login_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "logout", 
+            "doc": "\u7528\u6237\u767b\u51fa\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/logout$", 
+          "api_name": "logout", 
+          "module_name": "usercenter.UserService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "thirdLogin_V3", 
+            "doc": "\n        \u7b2c\u4e09\u65b9\u767b\u5f55(QQ,\u5fae\u4fe1,\u5fae\u535a)V3\n        :param appid:\n        :param device_id:\n        :param flag:\n        :param mobile:\n        :param identify_code:\n        :param screen_name:\n        :param profile_image_url:\n        :param gender:\n        :param country:\n        :param openid:\n        :param sina_uid:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "flag", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "access_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "imei", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "download_site", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "other", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "cl_version", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "version"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "screen_name", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "profile_image_url", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "gender", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "+86", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "openid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "sina_uid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "wx_open_id", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/thirdLogin_V3$", 
+          "api_name": "thirdLogin_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "register", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "mobile"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "client_ip"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "password"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "country"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "validated_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "need_validate_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "identify_code"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "is_third_party_account"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "sex"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "profile_image_url"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "screen_name"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "platform"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "imei"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "download_site"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "other"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "wx_open_id"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "cl_version"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/register$", 
+          "api_name": "register", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "checkThirdAccount", 
+            "doc": "\n        \u68c0\u6d4b\u7b2c\u4e09\u65b9\u8d26\u53f7\u662f\u5426\u5df2\u7ecf\u88ab\u7ed1\u5b9a\n        :param obj:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "openid"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/checkThirdAccount$", 
+          "api_name": "checkThirdAccount", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "login_V3", 
+            "doc": "\u767b\u5f55V3\uff0c\u589e\u52a0\u767b\u5f55\u65b9\u5f0f\u53c2\u6570\uff0c\u6839\u636e\u767b\u5f55\u65b9\u5f0f\uff0c\u91c7\u7528\u4e0d\u540c\u7684\u9a8c\u8bc1\u65b9\u5f0f\n        \u767b\u5f55\u65b9\u5f0f,1\u4e3a\u5bc6\u7801\u65b9\u5f0f\u767b\u5f55\uff0c2\u4e3a\u9a8c\u8bc1\u7801\u65b9\u5f0f\u767b\u5f55\n        @:arg appid\n        @:arg device_id\n        @:arg username\n        @:arg passwd\n        @:return\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "username", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "login_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "password", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/login_V3$", 
+          "api_name": "login_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "logout", 
+            "doc": "\u7528\u6237\u767b\u51fa\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/logout$", 
+          "api_name": "logout", 
+          "module_name": "usercenter.UserService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "thirdLogin_V3", 
+            "doc": "\n        \u7b2c\u4e09\u65b9\u767b\u5f55(QQ,\u5fae\u4fe1,\u5fae\u535a)V3\n        :param appid:\n        :param device_id:\n        :param flag:\n        :param mobile:\n        :param identify_code:\n        :param screen_name:\n        :param profile_image_url:\n        :param gender:\n        :param country:\n        :param openid:\n        :param sina_uid:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "flag", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "access_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "imei", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "download_site", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "other", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "cl_version", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "version"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "screen_name", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "profile_image_url", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "gender", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "+86", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "openid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "sina_uid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "wx_open_id", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/thirdLogin_V3$", 
+          "api_name": "thirdLogin_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "register", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "mobile"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "client_ip"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "password"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "country"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "validated_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "need_validate_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "identify_code"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "is_third_party_account"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "sex"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "profile_image_url"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "screen_name"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "platform"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "imei"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "download_site"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "other"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "wx_open_id"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "cl_version"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/register$", 
+          "api_name": "register", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "checkThirdAccount", 
+            "doc": "\n        \u68c0\u6d4b\u7b2c\u4e09\u65b9\u8d26\u53f7\u662f\u5426\u5df2\u7ecf\u88ab\u7ed1\u5b9a\n        :param obj:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "openid"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/checkThirdAccount$", 
+          "api_name": "checkThirdAccount", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "login_V3", 
+            "doc": "\u767b\u5f55V3\uff0c\u589e\u52a0\u767b\u5f55\u65b9\u5f0f\u53c2\u6570\uff0c\u6839\u636e\u767b\u5f55\u65b9\u5f0f\uff0c\u91c7\u7528\u4e0d\u540c\u7684\u9a8c\u8bc1\u65b9\u5f0f\n        \u767b\u5f55\u65b9\u5f0f,1\u4e3a\u5bc6\u7801\u65b9\u5f0f\u767b\u5f55\uff0c2\u4e3a\u9a8c\u8bc1\u7801\u65b9\u5f0f\u767b\u5f55\n        @:arg appid\n        @:arg device_id\n        @:arg username\n        @:arg passwd\n        @:return\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "username", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "login_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "password", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/login_V3$", 
+          "api_name": "login_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "logout", 
+            "doc": "\u7528\u6237\u767b\u51fa\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/logout$", 
+          "api_name": "logout", 
+          "module_name": "usercenter.UserService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "thirdLogin_V3", 
+            "doc": "\n        \u7b2c\u4e09\u65b9\u767b\u5f55(QQ,\u5fae\u4fe1,\u5fae\u535a)V3\n        :param appid:\n        :param device_id:\n        :param flag:\n        :param mobile:\n        :param identify_code:\n        :param screen_name:\n        :param profile_image_url:\n        :param gender:\n        :param country:\n        :param openid:\n        :param sina_uid:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "flag", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "access_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "imei", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "download_site", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "other", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "cl_version", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "version"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "screen_name", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "profile_image_url", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "gender", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "+86", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "openid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "sina_uid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "wx_open_id", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/thirdLogin_V3$", 
+          "api_name": "thirdLogin_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "register", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "mobile"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "client_ip"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "password"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "country"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "validated_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "need_validate_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "identify_code"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "is_third_party_account"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "sex"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "profile_image_url"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "screen_name"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "platform"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "imei"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "download_site"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "other"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "wx_open_id"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "cl_version"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/register$", 
+          "api_name": "register", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "checkThirdAccount", 
+            "doc": "\n        \u68c0\u6d4b\u7b2c\u4e09\u65b9\u8d26\u53f7\u662f\u5426\u5df2\u7ecf\u88ab\u7ed1\u5b9a\n        :param obj:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "openid"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/checkThirdAccount$", 
+          "api_name": "checkThirdAccount", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "login_V3", 
+            "doc": "\u767b\u5f55V3\uff0c\u589e\u52a0\u767b\u5f55\u65b9\u5f0f\u53c2\u6570\uff0c\u6839\u636e\u767b\u5f55\u65b9\u5f0f\uff0c\u91c7\u7528\u4e0d\u540c\u7684\u9a8c\u8bc1\u65b9\u5f0f\n        \u767b\u5f55\u65b9\u5f0f,1\u4e3a\u5bc6\u7801\u65b9\u5f0f\u767b\u5f55\uff0c2\u4e3a\u9a8c\u8bc1\u7801\u65b9\u5f0f\u767b\u5f55\n        @:arg appid\n        @:arg device_id\n        @:arg username\n        @:arg passwd\n        @:return\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "username", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "login_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "password", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/login_V3$", 
+          "api_name": "login_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "logout", 
+            "doc": "\u7528\u6237\u767b\u51fa\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/logout$", 
+          "api_name": "logout", 
+          "module_name": "usercenter.UserService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "thirdLogin_V3", 
+            "doc": "\n        \u7b2c\u4e09\u65b9\u767b\u5f55(QQ,\u5fae\u4fe1,\u5fae\u535a)V3\n        :param appid:\n        :param device_id:\n        :param flag:\n        :param mobile:\n        :param identify_code:\n        :param screen_name:\n        :param profile_image_url:\n        :param gender:\n        :param country:\n        :param openid:\n        :param sina_uid:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "flag", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "access_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "imei", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "download_site", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "other", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "cl_version", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "version"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "screen_name", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "profile_image_url", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "gender", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "+86", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "openid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "sina_uid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "wx_open_id", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/thirdLogin_V3$", 
+          "api_name": "thirdLogin_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "register", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "mobile"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "client_ip"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "password"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "country"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "validated_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "need_validate_phone"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "identify_code"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "is_third_party_account"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "sex"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "profile_image_url"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "screen_name"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "platform"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "imei"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "download_site"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "other"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "wx_open_id"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "cl_version"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/register$", 
+          "api_name": "register", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "checkThirdAccount", 
+            "doc": "\n        \u68c0\u6d4b\u7b2c\u4e09\u65b9\u8d26\u53f7\u662f\u5426\u5df2\u7ecf\u88ab\u7ed1\u5b9a\n        :param obj:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "default": null, 
+                "required": true, 
+                "name": "self"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "account_provider"
+              }, 
+              {
+                "default": null, 
+                "required": true, 
+                "name": "openid"
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/checkThirdAccount$", 
+          "api_name": "checkThirdAccount", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "login_V3", 
+            "doc": "\u767b\u5f55V3\uff0c\u589e\u52a0\u767b\u5f55\u65b9\u5f0f\u53c2\u6570\uff0c\u6839\u636e\u767b\u5f55\u65b9\u5f0f\uff0c\u91c7\u7528\u4e0d\u540c\u7684\u9a8c\u8bc1\u65b9\u5f0f\n        \u767b\u5f55\u65b9\u5f0f,1\u4e3a\u5bc6\u7801\u65b9\u5f0f\u767b\u5f55\uff0c2\u4e3a\u9a8c\u8bc1\u7801\u65b9\u5f0f\u767b\u5f55\n        @:arg appid\n        @:arg device_id\n        @:arg username\n        @:arg passwd\n        @:return\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "username", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "login_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "password", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/login_V3$", 
+          "api_name": "login_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "logout", 
+            "doc": "\u7528\u6237\u767b\u51fa\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/logout$", 
+          "api_name": "logout", 
+          "module_name": "usercenter.UserService", 
+          "se_level": null
+        }, 
+        {
+          "rest_spec": {
+            "name": "thirdLogin_V3", 
+            "doc": "\n        \u7b2c\u4e09\u65b9\u767b\u5f55(QQ,\u5fae\u4fe1,\u5fae\u535a)V3\n        :param appid:\n        :param device_id:\n        :param flag:\n        :param mobile:\n        :param identify_code:\n        :param screen_name:\n        :param profile_image_url:\n        :param gender:\n        :param country:\n        :param openid:\n        :param sina_uid:\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.UserService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "device_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "flag", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_code", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "access_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "client_ip", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "client_ip"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "imei", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "download_site", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "other", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "cl_version", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "version"
+                }
+              }, 
+              {
+                "required": false, 
+                "name": "screen_name", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "profile_image_url", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "gender", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "country", 
+                "default": "+86", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "openid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "sina_uid", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": false, 
+                "name": "wx_open_id", 
+                "default": "", 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "UserService", 
+          "url": "^/usercenter.UserService/thirdLogin_V3$", 
+          "api_name": "thirdLogin_V3", 
+          "module_name": "usercenter.UserService", 
+          "se_level": 1
+        }
+      ], 
+      "usercenter.DeviceService": [
+        {
+          "rest_spec": {
+            "name": "register_device", 
+            "doc": "\n        \u8bbe\u5907\u6ce8\u518c/\u83b7\u53d6device token, \u53c2\u52a0\u6587\u6863 http://doc.i55haitao.com/pages/viewpage.action?pageId=1933337\n        :param appid: appid\n        :param device_id:  device_id\n        :param push_device_token:  push_device_token\n        :param platform: \u5e73\u53f0 ios/android/web\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.DeviceService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "push_device_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "DeviceService", 
+          "url": "^/usercenter.DeviceService/register_device$", 
+          "api_name": "register_device", 
+          "module_name": "usercenter.DeviceService", 
+          "se_level": 0
+        }, 
+        {
+          "rest_spec": {
+            "name": "register_device", 
+            "doc": "\n        \u8bbe\u5907\u6ce8\u518c/\u83b7\u53d6device token, \u53c2\u52a0\u6587\u6863 http://doc.i55haitao.com/pages/viewpage.action?pageId=1933337\n        :param appid: appid\n        :param device_id:  device_id\n        :param push_device_token:  push_device_token\n        :param platform: \u5e73\u53f0 ios/android/web\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.DeviceService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "push_device_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "DeviceService", 
+          "url": "^/usercenter.DeviceService/register_device$", 
+          "api_name": "register_device", 
+          "module_name": "usercenter.DeviceService", 
+          "se_level": 0
+        }, 
+        {
+          "rest_spec": {
+            "name": "register_device", 
+            "doc": "\n        \u8bbe\u5907\u6ce8\u518c/\u83b7\u53d6device token, \u53c2\u52a0\u6587\u6863 http://doc.i55haitao.com/pages/viewpage.action?pageId=1933337\n        :param appid: appid\n        :param device_id:  device_id\n        :param push_device_token:  push_device_token\n        :param platform: \u5e73\u53f0 ios/android/web\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.DeviceService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "push_device_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "DeviceService", 
+          "url": "^/usercenter.DeviceService/register_device$", 
+          "api_name": "register_device", 
+          "module_name": "usercenter.DeviceService", 
+          "se_level": 0
+        }, 
+        {
+          "rest_spec": {
+            "name": "register_device", 
+            "doc": "\n        \u8bbe\u5907\u6ce8\u518c/\u83b7\u53d6device token, \u53c2\u52a0\u6587\u6863 http://doc.i55haitao.com/pages/viewpage.action?pageId=1933337\n        :param appid: appid\n        :param device_id:  device_id\n        :param push_device_token:  push_device_token\n        :param platform: \u5e73\u53f0 ios/android/web\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.DeviceService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "push_device_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "DeviceService", 
+          "url": "^/usercenter.DeviceService/register_device$", 
+          "api_name": "register_device", 
+          "module_name": "usercenter.DeviceService", 
+          "se_level": 0
+        }, 
+        {
+          "rest_spec": {
+            "name": "register_device", 
+            "doc": "\n        \u8bbe\u5907\u6ce8\u518c/\u83b7\u53d6device token, \u53c2\u52a0\u6587\u6863 http://doc.i55haitao.com/pages/viewpage.action?pageId=1933337\n        :param appid: appid\n        :param device_id:  device_id\n        :param push_device_token:  push_device_token\n        :param platform: \u5e73\u53f0 ios/android/web\n        :return:\n        ", 
+            "args": null, 
+            "module": "usercenter.DeviceService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "long", 
+                "type": {
+                  "type{type}": "long"
+                }, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "device_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "push_device_token", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "platform", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "DeviceService", 
+          "url": "^/usercenter.DeviceService/register_device$", 
+          "api_name": "register_device", 
+          "module_name": "usercenter.DeviceService", 
+          "se_level": 0
+        }
+      ], 
+      "usercenter.VerifyService": [
+        {
+          "rest_spec": {
+            "name": "get_nologin_verify_code", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_nologin_verify_code$", 
+          "api_name": "get_nologin_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_logined_verify_code", 
+            "doc": "\u83b7\u53d6\u77ed\u4fe1\u9a8c\u8bc1\u7801\n        ", 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_logined_verify_code$", 
+          "api_name": "get_logined_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 2
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_nologin_verify_code", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_nologin_verify_code$", 
+          "api_name": "get_nologin_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_logined_verify_code", 
+            "doc": "\u83b7\u53d6\u77ed\u4fe1\u9a8c\u8bc1\u7801\n        ", 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_logined_verify_code$", 
+          "api_name": "get_logined_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 2
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_nologin_verify_code", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_nologin_verify_code$", 
+          "api_name": "get_nologin_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_logined_verify_code", 
+            "doc": "\u83b7\u53d6\u77ed\u4fe1\u9a8c\u8bc1\u7801\n        ", 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_logined_verify_code$", 
+          "api_name": "get_logined_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 2
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_nologin_verify_code", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_nologin_verify_code$", 
+          "api_name": "get_nologin_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_logined_verify_code", 
+            "doc": "\u83b7\u53d6\u77ed\u4fe1\u9a8c\u8bc1\u7801\n        ", 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_logined_verify_code$", 
+          "api_name": "get_logined_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 2
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_nologin_verify_code", 
+            "doc": null, 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_nologin_verify_code$", 
+          "api_name": "get_nologin_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 1
+        }, 
+        {
+          "rest_spec": {
+            "name": "get_logined_verify_code", 
+            "doc": "\u83b7\u53d6\u77ed\u4fe1\u9a8c\u8bc1\u7801\n        ", 
+            "args": null, 
+            "module": "usercenter.VerifyService", 
+            "params": [
+              {
+                "required": true, 
+                "name": "self", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "appid", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "appid"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "user_id", 
+                "default": null, 
+                "type_name": "\u4efb\u610f\u7c7b\u578b", 
+                "type": null, 
+                "inject_param": {
+                  "type{api_common.constants.common_args}": "user_id"
+                }
+              }, 
+              {
+                "required": true, 
+                "name": "identify_type", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "mobile", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }, 
+              {
+                "required": true, 
+                "name": "country", 
+                "default": null, 
+                "type_name": "\u4efb\u610f", 
+                "type": null, 
+                "inject_param": null
+              }
+            ], 
+            "kwargs": null
+          }, 
+          "class_name": "VerifyService", 
+          "url": "^/usercenter.VerifyService/get_logined_verify_code$", 
+          "api_name": "get_logined_verify_code", 
+          "module_name": "usercenter.VerifyService", 
+          "se_level": 2
+        }
+      ]
+    }
+  }
+}
