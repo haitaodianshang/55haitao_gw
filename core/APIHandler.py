@@ -124,7 +124,7 @@ class APIHandler(RequestHandler):
             try:
                 logging.info('%s|%s', input['_tk'], app_info['usertoken_key'])
                 user_token_data = user_token.validate_user_token(input['_tk'], app_info['usertoken_key'])
-                
+
             except CoreError as ex:
                 raise ex
             except Exception, e:
@@ -145,7 +145,7 @@ class APIHandler(RequestHandler):
 
             common_argument[common_args_enum.COMMON_ARGS_USER_ID.param] = user_token_data['token']['user_id']
             common_argument[common_args_enum.COMMON_ARGS_DEVICE_ID.param] = user_token_data['token']['device_id']
-            
+
         elif api_info['se_level'] == security_level['DeviceLogin']:
             if not device_token_data:
                 raise CoreError(constants.E_AUTH_DEVICE_ERROR, 'decode device token fail')
@@ -159,7 +159,7 @@ class APIHandler(RequestHandler):
             #设备登陆级别接口, 提供可用的_tk参数,依然可以注入user_id，否则注入默认参数
             if user_token_data:
                 common_argument[common_args_enum.COMMON_ARGS_USER_ID.param] = user_token_data['token'].get('user_id', 0)
-                
+
         elif api_info['se_level'] != security_level['None']:
             raise Exception('未知安全级别')
 
@@ -176,7 +176,7 @@ class APIHandler(RequestHandler):
                     input[param['name']] = param['default'] #如果没有注入成功则使用默认参数
                 else:
                     input[param['name']] = common_argument[param['inject_param'].param]
-        response = self.context.rpc_client(api_info['module_name'], api_info['api_name'], **input)
+        response = yield self.context.rpc_client(api_info['module_name'], api_info['api_name'], **input)
         rpc_audit_logger.info('{"module": "%s", "method": "%s", "call_time_ms": %d}',
                               api_info['module_name'], api_info['api_name'], int(time.time()*1000) - self.stat['systime'])
         res = json.loads(response)
@@ -208,8 +208,3 @@ class APIHandler(RequestHandler):
         except Exception:
             logging.error(traceback.format_exc())
             return super(APIHandler, self).write_error(status_code, **kwargs)
-
-
-
-
-
