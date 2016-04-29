@@ -176,10 +176,9 @@ class APIHandler(RequestHandler):
                     input[param['name']] = param['default'] #如果没有注入成功则使用默认参数
                 else:
                     input[param['name']] = common_argument[param['inject_param'].param]
-        response = yield self.context.rpc_client(api_info['module_name'], api_info['api_name'], **input)
+        res = yield self.context.rpc_client(api_info['module_name'], api_info['api_name'], **input)
         rpc_audit_logger.info('{"module": "%s", "method": "%s", "call_time_ms": %d}',
                               api_info['module_name'], api_info['api_name'], int(time.time()*1000) - self.stat['systime'])
-        res = json.loads(response)
         res['stat'] = self.stat
         self.write(res)
         self.finish()
