@@ -48,9 +48,16 @@ class APIHandler(RequestHandler):
             raise CoreError(constants.E_AUTH_LOGIN_ON_OTHER_DEVICE, '该用户已经在其他设备登陆')
 
     def check_signature(self, se_level, data, dtk=None, tk=None):
-        print data_integrity.sign(se_level, data, dtk=dtk, tk=tk), data.get('_sig'), data
+        print data_integrity.sign(se_level, data, dtk=dtk, tk=tk), data.get('_sig'), data, se_level
         if data_integrity.sign(se_level, data, dtk=dtk, tk=tk) != data.get('_sig', None):
             raise CoreError(constants.E_SIGN_SIGN_ERROR, '不合法的签名')
+
+    def options(self):
+	
+        self.set_header('Access-Control-Allow-Origin', self.request.headers.get('Origin'))
+        #self.set_header('Access-Control-Allow-Credentials', 'true')
+        #self.set_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
+        self.finish()
 
     @tornado.gen.coroutine
     def post(self):
@@ -60,6 +67,8 @@ class APIHandler(RequestHandler):
         服务端接收请求处理顺序
         检查必须参数 _mt 是否完整
         """
+        #self.set_header('Access-Control-Allow-Origin', self.request.headers.get('Origin'))
+	logging.info(self.request.headers.get('Origin'))
         try:
             input = json.loads(self.request.body)
             self.stat['cid'] = input.get('_cid') or self._generate_cid()
