@@ -5,7 +5,7 @@ from base_repo import BaseRepo
 class UserRepo(BaseRepo):
 
     def check_user_login(self, appid, device_id, user_id):
-        sql = ("SELECT user_token FROM htapp_user_token"
+        sql = ("SELECT user_token FROM htapp_user_token "
                "WHERE `appid`=%s AND `device_id`=%s AND `user_id`=%s AND `is_active`=1 ")
         tokens = self.db.query(sql, appid, device_id, user_id)
     
