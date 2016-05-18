@@ -42,7 +42,7 @@ def sign(se_level, data, dtk=None, tk=None):
     if data.get('_sm', '') != 'MD5':
         raise Exception('不支持的签名方式')
 
-    print sign_str
+    logging.info('before sign:%s', sign_str)
 
     signature = md5.new(sign_str).hexdigest()
     print signature
