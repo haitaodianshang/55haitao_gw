@@ -2,7 +2,7 @@
 
 import os
 
-ENV = os.getenv('HTGW_ENV')
+ENV = os.getenv('HTAPP_ENV')
 
 if ENV == 'PROD':
     from settings_prod import *

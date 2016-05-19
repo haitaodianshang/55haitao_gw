@@ -11,7 +11,7 @@ host = '0.0.0.0'
 port = 8070
 instances = 1
 register = {
-    'ip': '127.0.0.1',
+    'ip': '172.16.2.41',
     'port': 2379,
     'path': '/rpc',
     'timeout': 6 #心跳超时时间,超过该时间未汇报则为服务消失
