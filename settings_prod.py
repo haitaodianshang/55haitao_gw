@@ -23,9 +23,9 @@ appinfo_basedir = './data/app'
 service_name = 'api_gate'
 
 baijie_db = {
-    'ip': '172.16.2.41',    # TODO 数据库地址
+    'ip': '10.168.100.78',    # TODO 数据库地址
     'port': 3306,           # TODO 数据库端口号
-    'user': '55haitao',     # TODO 数据库用户名
+    'user': 'root',     # TODO 数据库用户名
     'passwd': '55haitao',   # TODO 数据库密码
-    'db': '55haitao_dev'    # TODO 数据库名
+    'db': '55haitao_test'    # TODO 数据库名
 }
