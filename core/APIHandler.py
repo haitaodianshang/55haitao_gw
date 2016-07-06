@@ -56,6 +56,9 @@ class APIHandler(RequestHandler):
         self.set_header('Access-Control-Allow-Origin', self.request.headers.get('Origin'))
         self.finish()
 
+    def with_request(self, msg):
+        return "request error:\msg:%s\nheaders:%s\nbody:%s" % (msg, self.request.headers, self.request.body)
+
     @tornado.gen.coroutine
     def post(self):
         """接收post请求,并鉴权之后转发给各服务
@@ -80,6 +83,7 @@ class APIHandler(RequestHandler):
 
         api_info = self.context.api_repo.find(input['_mt'])
         if api_info is None:
+            logging.warn(self.with_request('unknown _mt:%s' % input['_mt']))
             raise CoreError(constants.E_METHOD_NOTFOUND, 'unknown _mt:%s' % input['_mt'])
 
         if '_aid' not in input:
@@ -93,9 +97,11 @@ class APIHandler(RequestHandler):
 
         #校验签名
         if api_info['se_level'] not in [security_level['UserLogin'], security_level['DeviceLogin'], security_level['None']]:
+            logging.warn(self.with_request('不支持的_sm参数'))
             raise CoreError(constants.E_SIGN_UNKNOWN_SIGN_METHOD, '不支持的_sm参数')
 
         if input.get('_sm', '') != 'MD5':
+            logging.warn(self.with_request('不支持的_sm参数'))
             raise CoreError(constants.E_SIGN_UNKNOWN_SIGN_METHOD, '不支持的_sm参数')
 
         self.check_signature(api_info['se_level'], input, tk=input.get('_tk', None), dtk=input.get('_dtk', None))
@@ -123,13 +129,13 @@ class APIHandler(RequestHandler):
             except CoreError as ex:
                 raise ex
             except Exception, e:
-                logging.warn('decode user_token fail:%s', traceback.format_exc())
-                pass
+                logging.warn(self.with_request('decode user_token fail:%s', traceback.format_exc()))
+
         if '_dtk' in input and input.get('_dtk') != None:
             try:
                 device_token_data = device_token.validate_device_token(input['_dtk'], app_info['devicetoken_key'])
             except Exception, e:
-                pass
+                logging.warn(self.with_request('decode device_token fail:%s', traceback.format_exc()))
 
         if api_info['se_level'] == security_level['UserLogin']:
             if not user_token_data:
@@ -191,9 +197,8 @@ class APIHandler(RequestHandler):
                 pass
             else:
                 e = CoreError(500)
-
-            exception = "".join([ln for ln in traceback.format_exception(*exc_info)])
-            logger.error(exception)
+                exception = "".join([ln for ln in traceback.format_exception(*exc_info)]) #记录所有非业务异常
+                logger.error(exception)
 
             self.clear()
             self.set_status(200)  # always return 200 OK for API errors
