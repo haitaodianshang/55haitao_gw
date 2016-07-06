@@ -1,5 +1,5 @@
 {
   "appid": 1001,
-  "usertoken_key": "abcdefgh12345679",
-  "devicetoken_key": "abcdefgh12345678"
+  "usertoken_key": "12345679abcdefgh",
+  "devicetoken_key": "12345678abcdefgh"
 }

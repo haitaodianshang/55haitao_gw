@@ -54,5 +54,6 @@ def get_connection():
                                          options.baijie_db['port']),
                               options.baijie_db['db'],
                               user=options.baijie_db['user'],
-                              password=options.baijie_db['passwd'])
+                              password=options.baijie_db['passwd'],
+                              charset='utf8mb4', max_idle_time=100)
     return _db_conn
