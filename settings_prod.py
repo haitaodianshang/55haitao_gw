@@ -17,15 +17,15 @@ register = {
     'timeout': 6 #心跳超时时间,超过该时间未汇报则为服务消失
 }
 
-contract_dir = './data'
-appinfo_basedir = './data/app'
+contract_dir = '/data/htapp/gw_data'
+appinfo_basedir = '/data/htapp/gw_data/app'
 
 service_name = 'api_gate'
 
 baijie_db = {
-    'ip': '10.168.100.78',    # TODO 数据库地址
+    'ip': '10.46.66.131',    # TODO 数据库地址
     'port': 3306,           # TODO 数据库端口号
-    'user': 'root',     # TODO 数据库用户名
-    'passwd': '55haitao',   # TODO 数据库密码
-    'db': '55haitao_test'    # TODO 数据库名
+    'user': 'haitao_app_prod',     # TODO 数据库用户名
+    'passwd': 'mxaRIbWILOQAGH1YYzXA',   # TODO 数据库密码
+    'db': 'haitao_app'    # TODO 数据库名
 }
