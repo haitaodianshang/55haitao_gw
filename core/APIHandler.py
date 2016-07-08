@@ -6,7 +6,7 @@
 @time  : 2/17/16 10:47 PM
 """
 
-import json
+import json, sys
 import logging
 import traceback, time
 
@@ -60,13 +60,7 @@ class APIHandler(RequestHandler):
         return "request error:\msg:%s\nheaders:%s\nbody:%s" % (msg, self.request.headers, self.request.body)
 
     @tornado.gen.coroutine
-    def post(self):
-        """接收post请求,并鉴权之后转发给各服务
-
-        检查安全接口安全级别 -> 鉴权 -> 返回鉴权结果
-        服务端接收请求处理顺序
-        检查必须参数 _mt 是否完整
-        """
+    def handler(self):
         #self.set_header('Access-Control-Allow-Origin', self.request.headers.get('Origin'))
         try:
             input = json.loads(self.request.body)
@@ -129,13 +123,13 @@ class APIHandler(RequestHandler):
             except CoreError as ex:
                 raise ex
             except Exception, e:
-                logging.warn(self.with_request('decode user_token fail:%s', traceback.format_exc()))
+                logging.warn(self.with_request('decode user_token fail:%s' % traceback.format_exc()))
 
         if '_dtk' in input and input.get('_dtk') != None:
             try:
                 device_token_data = device_token.validate_device_token(input['_dtk'], app_info['devicetoken_key'])
             except Exception, e:
-                logging.warn(self.with_request('decode device_token fail:%s', traceback.format_exc()))
+                logging.warn(self.with_request('decode device_token fail:%s' % traceback.format_exc()))
 
         if api_info['se_level'] == security_level['UserLogin']:
             if not user_token_data:
@@ -181,9 +175,26 @@ class APIHandler(RequestHandler):
         rpc_audit_logger.info('{"module": "%s", "method": "%s", "call_time_ms": %d}',
                               api_info['module_name'], api_info['api_name'], int(time.time()*1000) - self.stat['systime'])
         res['stat'] = self.stat
-        self.write(res)
-        self.finish()
+        raise tornado.gen.Return(res)
 
+    @tornado.gen.coroutine
+    def post(self):
+        """接收post请求,并鉴权之后转发给各服务
+
+        检查安全接口安全级别 -> 鉴权 -> 返回鉴权结果
+        服务端接收请求处理顺序
+        检查必须参数 _mt 是否完整
+        """
+        try:
+            result = yield self.handler()
+            self.write(result)
+        except Exception as e:
+            if not(isinstance(e, BizError) or isinstance(e, CoreError)):
+                logger.error(traceback.format_exc())
+                e = CoreError(500)
+            result = {'code': e.code, 'data': e.data, 'msg': e.msg}
+        finally:     
+            self.finish()
 
     def write_error(self, status_code, **kwargs):
         """Override to implement custom error pages."""
@@ -191,19 +202,13 @@ class APIHandler(RequestHandler):
         try:
             exc_info = kwargs.pop('exc_info')
             e = exc_info[1]
-            if isinstance(e, BizError):
-                pass
-            elif isinstance(e, CoreError):
-                pass
-            else:
-                e = CoreError(500)
-                exception = "".join([ln for ln in traceback.format_exception(*exc_info)]) #记录所有非业务异常
-                logger.error(exception)
-
+            exception = "".join([ln for ln in traceback.format_exception(*exc_info)]) #记录所有非业务异常
+            logger.error(exception)
+            
             self.clear()
             self.set_status(200)  # always return 200 OK for API errors
             self.set_header("Content-Type", "application/json; charset=UTF-8")
-            self.finish({'code': e.code, 'data': e.data, 'msg': str(e)})
+            self.finish({'code': 500, 'data': None, 'msg': str(e)})
         except Exception:
             logging.error(traceback.format_exc())
             return super(APIHandler, self).write_error(status_code, **kwargs)
