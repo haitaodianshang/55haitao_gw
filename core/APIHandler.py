@@ -101,7 +101,7 @@ class APIHandler(RequestHandler):
         self.check_signature(api_info['se_level'], input, tk=input.get('_tk', None), dtk=input.get('_dtk', None))
 
         common_argument = {}
-        app_info = self.context.app_repo.find(input['_aid'])
+        app_info = self.context.app_repo.find(int(input['_aid']))
         if not app_info:
             raise BizError(constants.E_APPID_UNREGISTED, '未注册的appid')
 
@@ -193,6 +193,7 @@ class APIHandler(RequestHandler):
                 logger.error(traceback.format_exc())
                 e = CoreError(500)
             result = {'code': e.code, 'data': e.data, 'msg': e.msg}
+            self.write(result)
         finally:     
             self.finish()
 
