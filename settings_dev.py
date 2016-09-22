@@ -17,8 +17,8 @@ register = {
     'timeout': 6 #心跳超时时间,超过该时间未汇报则为服务消失
 }
 
-contract_dir = './data'
-appinfo_basedir = './data/app'
+contract_dir = '/var/55haitao/gw_data'
+appinfo_basedir = './data/55haitao/gw_data/app'
 
 service_name = 'api_gate'
 
