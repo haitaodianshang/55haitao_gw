@@ -18,7 +18,7 @@ register = {
 }
 
 contract_dir = '/var/55haitao/gw_data'
-appinfo_basedir = './data/55haitao/gw_data/app'
+appinfo_basedir = '/var/55haitao/gw_data/app'
 
 service_name = 'api_gate'
 
