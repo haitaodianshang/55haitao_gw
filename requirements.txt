@@ -1,6 +1,6 @@
 backports-abc==0.4
 backports.ssl-match-hostname==3.5.0.1
-certifi==2015.11.20.1
+certifi==2022.12.7
 dnspython==1.12.0
 enum34==1.1.2
 msgpack-python==0.4.7
